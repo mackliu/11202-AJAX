@@ -68,16 +68,15 @@ axios.get('stock.php')
         for(let i=0;i<100;i++){
             let ul=document.getElementsByTagName('ul')[0]
             //console.log(ul.innerHTML)
-            
-                li=`<li class="list-group-item list-group-item-action">
-                        <div>股號:${data[i].Code}</div>
-                        <div>公司名:${data[i].Name}</div>
-                        <div>收盤價:${data[i].WeightedAvgPriceAB}</div>
-                        <div>最高價:${data[i].HighestPrice}</div>
-                        <div>最低價:${data[i].LowestPrice}</div>
-                    </li>`;
-                ul.innerHTML=ul.innerHTML+li
-                //console.log(ul)                    
+            li=`<li class="list-group-item list-group-item-action">
+                    <div>股號:${data[i].Code}</div>
+                    <div>公司名:${data[i].Name}</div>
+                    <div>收盤價:${data[i].WeightedAvgPriceAB}</div>
+                    <div>最高價:${data[i].HighestPrice}</div>
+                    <div>最低價:${data[i].LowestPrice}</div>
+                </li>`;
+            ul.innerHTML=ul.innerHTML+li
+            //console.log(ul)                    
             
         }
 
